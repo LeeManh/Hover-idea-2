@@ -1,0 +1,43 @@
+// ========== background ================
+.effect-julia {
+  background: #2f3238 !important;
+}
+.effect-julia .img-bg {
+  transition: 1s;
+}
+.effect-julia:hover .img-bg {
+  opacity: 0.6;
+  transform: scale(1.1);
+  
+}
+// ========== title ================
+.effect-julia .title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+// ========== desc ================
+.effect-julia .desc {
+  background: rgba(255,255,255,0.9);
+	color: #2f3238;
+  margin-bottom: 5px;
+  padding: 0.4em 1em;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(-150%, 0, 0);
+  transition: 0.4s;
+}
+.effect-julia .desc:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.effect-julia .desc:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.effect-julia .desc:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.effect-julia:hover .desc {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}

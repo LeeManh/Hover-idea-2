@@ -1,0 +1,59 @@
+// ========== background ===========
+.effect-jazz {
+  perspective: 1000px;
+  background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%) !important;
+}
+
+.effect-jazz .img-bg {
+  transition: 0.4s;
+  
+}
+.effect-jazz:hover .img-bg {
+  transform: translate3d(0,0,100px);
+  opacity: 0.7;
+}
+
+// ========== title ===========
+.effect-jazz .text-wrap {
+  text-align: center;
+}
+.effect-jazz .title {
+  padding-top: 25%;
+  transition: 0.4s;
+}
+.effect-jazz:hover .title {
+  transform: scale(1.1);
+}
+
+// ========== desc ===========
+.effect-jazz .desc {
+  font-size: 16px;
+  text-transform: none;
+  padding: 20px 40px 0;
+  transition: 0.4s;
+  transform: scale(0.5,0.5);
+  opacity: 0;
+}
+.effect-jazz:hover .desc {
+  transform: scale(1);
+  opacity: 1;
+}
+
+// ========== line ===========
+.effect-jazz .caption::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg) scale(1,0);
+  transition: 0.4s;
+  transform-origin: 50% 50%;
+}
+
+.effect-jazz:hover .caption::before {
+  transform: rotate(45deg) scale(1,1);
+}

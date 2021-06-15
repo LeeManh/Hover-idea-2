@@ -1,0 +1,70 @@
+
+// ========= title ============
+.effect-hera .title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  transition: 0.4s;
+
+}
+
+.effect-hera:hover .title {
+  opacity: 0;
+}
+
+// ========= icon ============
+
+.effect-hera .icon {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s;
+}
+.effect-hera .icon:nth-child(1) {
+  top: 38%;
+  left: 42%;
+  transform: translate3d(-60px,-60px, 0);
+}
+.effect-hera .icon:nth-child(2) {
+  top: 38%;
+  right: 42%;
+  transform: translate3d(60px,-60px, 0);
+}
+.effect-hera .icon:nth-child(3) {
+  bottom: 38%;
+  left: 42%;
+  transform: translate3d(-60px,60px, 0);
+}
+.effect-hera .icon:nth-child(4) {
+  bottom: 38%;
+  right: 42%;
+  transform: translate3d(60px,60px, 0);
+}
+.effect-hera:hover .icon {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+// ========= box ============
+
+.effect-hera .caption::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid white;
+
+  opacity: 0;
+  transform: translate3d(-50%,-50%,0) rotate(45deg) scale3d(0,0,1);
+
+  transition: 0.4s;
+}
+.effect-hera:hover .caption::before {
+  opacity: 1;
+  transform: translate3d(-50%,-50%,0) rotate(45deg) scale3d(1,1,1);
+}

@@ -1,0 +1,40 @@
+.effect-duke {
+  background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%) !important;
+}
+.effect-duke .img-bg {
+  transition: 0.4s;
+}
+.effect-duke:hover .img-bg {
+  opacity: 0.4;
+  transform: scale(1.5);
+}
+
+.effect-duke .text-wrap {
+  text-align: center;
+}
+.effect-duke .title {
+  padding-top: 5%;
+}
+.effect-duke:hover .title {
+  transform: scale(1.3);
+}
+.effect-duke .desc {
+  border: 2px solid white;
+  position: absolute;
+  padding: 40px;
+  font-size: 14px;
+  text-transform: none;
+  width: calc(100% - 4em);
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%,0) scale(0.5);
+  opacity: 0;
+
+  transition: 0.4s;
+}
+
+.effect-duke:hover .desc {
+  opacity: 1;
+  transform: translate(-50%,0) scale(1);
+
+}

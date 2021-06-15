@@ -1,0 +1,71 @@
+// ========== background ===========
+.effect-winston {
+  background: #162633 !important;
+}
+.effect-winston .img-bg {
+  transition: 0.4s;
+}
+.effect-winston:hover .img-bg {
+  opacity: 0.4;
+}
+
+// ========== title ===========
+.effect-winston .title {
+  transform: translate3d(0,100%,0);
+
+  transition: 0.4s;
+}
+
+.effect-winston:hover .title {
+  transform: translate3d(0,0,0);
+}
+
+
+// ========== box ===========
+.effect-winston .caption::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 61%, 0% 100%, 100% 100%);
+  background: rgba(white, 0.5);
+
+  transform-origin: 100% 100%;
+  transform: scaleY(0);
+  transition: 0.4s; 
+}
+.effect-winston:hover .caption::before {
+  transform: scaleY(1);
+}
+
+// ========== icon ===========
+.effect-winston .icon {
+  color: #5d504f;
+  font-size: 22px;
+  position: absolute;
+  transform: translate3d(0, 300%, 0);
+  transition: 0.4s;
+}
+.effect-winston .icon:nth-child(1) {
+  bottom: 1.3em;
+  right: 35%;
+  transition-delay: 0.05s;
+}
+.effect-winston .icon:nth-child(2) {
+  bottom: 1.3em;
+  right: 20%;
+  transition-delay: 0.07s;
+
+}
+.effect-winston .icon:nth-child(3) {
+  bottom: 1.3em;
+  right: 5%;
+  transition-delay: 0.09s;
+
+}
+ 
+.effect-winston:hover .icon {
+  transform: translate3d(0,0,0);
+}

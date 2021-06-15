@@ -1,0 +1,104 @@
+// =========== background ===========
+.effect-phoebe {
+  background: #675983 !important;
+}
+
+
+// =========== title ===========
+.effect-phoebe .title {
+  text-align: center;
+  padding-top: 10%;
+
+  transform: translate3d(0, 30px, 0);
+  transition: 0.4s;
+}
+.effect-phoebe:hover .title {
+  transform: translate3d(0,0,0);
+}
+
+// =========== icon ===========
+.effect-phoebe .text-wrap a{
+  position: absolute;
+  color: white;
+  padding-top: 10px;
+  opacity: 0;
+
+  transition: 0.4s;
+}
+
+.effect-phoebe .text-wrap a:nth-of-type(1){
+  left: 40%;
+  transform: translate3d(-50%,0,0) translate3d(-70px,-70px,0);
+}
+.effect-phoebe .text-wrap a:nth-of-type(2){
+  left: 50%;
+  transform: translate3d(-50%,0,0) translate3d(0,70px,0);
+}
+.effect-phoebe .text-wrap a:nth-of-type(3){
+  left: 60%;
+  transform: translate3d(70px,-70px,0);
+}
+.effect-phoebe:hover .text-wrap a:nth-of-type(1) {
+  opacity: 1;
+  transform: translate3d(-50%,0,0) translate3d(0,0,0);
+}
+.effect-phoebe:hover .text-wrap a:nth-of-type(2) {
+  opacity: 1;
+  transform: translate3d(-50%,0,0) translate3d(0,0,0);
+}
+.effect-phoebe:hover .text-wrap a:nth-of-type(3) {
+  opacity: 1;
+  transform: translate3d(-50%,0,0) translate3d(0,0,0);
+}
+// ============ triangle ================
+.effect-phoebe .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(5);
+  transition: 0.4s;
+
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(127, 109, 127, 0.5);
+  }
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(127, 109, 127, 0.5);
+  }
+
+  &__left {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 50%;
+    width: 100%;
+    background-color: rgba(127, 109, 127, 0.5);
+    transform: skew(35deg);
+    transform-origin: 100% 100%;
+  }
+  &__right {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 50%;
+    width: 100%;
+    background-color: rgba(127, 109, 127, 0.5);
+    transform: skew(-35deg);
+    transform-origin: 100% 100%;
+  }
+}
+
+.effect-phoebe:hover .triangle {
+  transform: scale(1);
+}

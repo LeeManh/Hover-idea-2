@@ -1,0 +1,90 @@
+// ========== background ============
+.effect-terry {
+  background: #34495e;
+}
+.effect-terry .img-bg {
+  transition: 0.4s;
+}
+.effect-terry:hover .img-bg {
+  opacity: 0.7;
+}
+// ========== title ============
+.effect-terry .title {
+  position: absolute;
+  z-index: 100;
+  bottom: 20px;
+  left: 2em;
+  transform: translate3d(140%,0,0);
+  transition: 0.4s;
+}
+.effect-terry:hover .title  {
+  transform: translate3d(0,0,0);
+}
+
+
+// ========== shadow ============
+.effect-terry .caption::before,
+.effect-terry .caption::after {
+  position: absolute;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+  
+  border-style: solid;
+  border-color: black;
+
+  transition: 0.4s;
+}
+
+.effect-terry .caption::before {
+  top: 0;
+  left: 0;
+  border-width: 20px 0 0 20px;
+  transform: translate3d(-20px,-20px,0);
+}
+.effect-terry .caption::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 70px 60px 0;
+  transform: translate3d(70px,60px,0);
+}
+.effect-terry:hover .caption::before,
+.effect-terry:hover .caption::after {
+  transform: translate3d(0,0,0);
+}
+
+// ========== icon ============
+.effect-terry .text-wrap a {
+  color: white;
+  z-index: 100;
+  position: absolute;
+  transform: translate3d(100px,0,0);
+  transition: 0.4s;
+}
+.effect-terry .text-wrap a:nth-of-type(1) {
+  top: 10%;
+  right: 25px;
+  transition-delay: 0.025s;
+}
+.effect-terry .text-wrap a:nth-of-type(2) {
+  transition-delay: 0.05s;
+  top: 20%;
+  right: 25px;
+}
+
+.effect-terry .text-wrap a:nth-of-type(3) {
+  top: 30%;
+  right: 25px;
+  transition-delay: 0.075s;
+}
+
+.effect-terry .text-wrap a:nth-of-type(4) {
+  top: 40%;
+  right: 25px;
+  transition-delay: 0.1s;
+}
+
+.effect-terry:hover .text-wrap a {
+  transform: translate3d(0,0,0);
+}
